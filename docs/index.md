@@ -12,7 +12,7 @@ Pour réaliser ces analyses nous allons utiliser l’outil Galaxy. Il s’agit d
 
 Vous pouvez également trouver d’autres miroirs du site principal de Galaxy adapté à diverses communautés, chacune ayant choisi d’ajouter au sein du système ces propres modules. Une [liste des principaux miroirs et de leurs communautés](https://galaxyproject.org/use/) est disponible en ligne.
 
-Nous démarrons le TP là où il a été laissé hier. Voici le lien [vers la documentation Github faite par ARTbio](https://artbio.github.io/startbio/AnalyseGenomes_2024/outline/)
+Nous démarrons le TP là où il a été laissé hier. Voici le lien [vers la documentation Github faite par ARTbio](https://artbio.github.io/startbio/AnalyseGenomes_2025/outline/)
 
 !!! danger "Attention"
 
