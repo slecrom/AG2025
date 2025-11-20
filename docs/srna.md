@@ -33,7 +33,7 @@ Si aucune image ne s'affiche, rendez-vous dans les [annexes](./annexes.md#resoud
 
 En vous aidant de la notice d’utilisation du logiciel, regardez les résultats du contrôle de qualité effectué par FastQC sur votre fichier fastq.
 
-Reportez le "nombre lectures totales" et le "%GC" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=243437883).
+Reportez le "nombre lectures totales" et le "%GC" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=243437883).
 
 !!! hint "Questions"
 
@@ -62,7 +62,7 @@ Vous allez pour cela utiliser l’outil ***Clip adapter***. Les réglages à mod
 
 Sur les fichiers fastq obtenus en sortie de cette étape de clipping, relancez une analyse de la qualité des séquences avec l’outil ***FastQC***.
 
-Reportez le "nombre lectures 19-30nt" et le "%GC" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=243437883).
+Reportez le "nombre lectures 19-30nt" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=243437883).
 
 
 !!! hint "Questions"
@@ -103,7 +103,7 @@ L’objectif de cette étape est de retirer de nos petits ARN certains élément
 - miscRNA : small nuclear RNA (snRNA), small nucleolar RNA (snoRNA), et ARN ribosomique (rRNA)
 - tRNA : ARN de transferts
 
-Pour ce TP vous allez utiliser la version 6.59 du génome de *Drosophila melanogaster* dont les fichiers de séquence au format fasta sont accessibles sur le [site FTP de Flybase](https://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/)
+Pour ce TP vous allez utiliser la version 6.59 du génome de *Drosophila melanogaster* dont les fichiers de séquence au format fasta sont accessibles sur le [site FTP de Flybase](https://s3ftp.flybase.org/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/index.html)
 
 ### Choix des paramètres d'alignement
 
@@ -140,7 +140,7 @@ Le workflow "sRNA clean-up v2" que vous allez utiliser est disponible [en cliqua
 
 ![sRNA clean-up workflow](img/srna/srna_cleanup_workflow.png "sRNA clean-up workflow")
 
-Aidez-vous du tutoriel [Running a galaxy workflow](https://artbio.github.io/startbio/AnalyseGenomes_2024/Run_workflow/) que vous avez vu hier et lancez le workflow sur les données clippées.
+Aidez-vous du tutoriel [Running a galaxy workflow](https://artbio.github.io/startbio/AnalyseGenomes_2025/Run_workflow/) que vous avez vu hier et lancez le workflow sur les données clippées.
 
 !!! danger "Attention"
 
