@@ -62,7 +62,7 @@ Vous allez pour cela utiliser l’outil ***Clip adapter***. Les réglages à mod
 
 Sur les fichiers fastq obtenus en sortie de cette étape de clipping, relancez une analyse de la qualité des séquences avec l’outil ***FastQC***.
 
-Reportez le "nombre lectures 19-30nt" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=243437883).
+Reportez le "nombre lectures 19-30nt" et le "%GC" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=243437883).
 
 
 !!! hint "Questions"
@@ -144,7 +144,7 @@ Aidez-vous du tutoriel [Running a galaxy workflow](https://artbio.github.io/star
 
 !!! danger "Attention"
 
-	Les deux icônes de choix des données sont identiques. Il faut choisir "Multiple collection" et pas "Dataset collection" ! L'icône de droite.
+	Les deux icônes de choix des données sont identiques. Il faut choisir "Dataset collection" et pas "Multiple collection" ! L'icône de gauche.
 
 ![Run sRNA clean-up workflow](img/srna/run_cleanup_workflow.png "Run sRNA clean-up workflow")
 
@@ -152,7 +152,7 @@ Sur les fichiers fastq obtenus en sortie de ce filtrage, relancez une analyse de
 
 N'oubliez pas de renommer chaque étape dans l'histoire Galaxy pour vous y retrouver plus facilement.
 
-Reportez le "nombre de lectures nettoyées" et leur "%GC" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=243437883).
+Reportez le "nombre de lectures nettoyées" et leur "%GC" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=243437883).
 
 Reportez également le nombre de lectures alignées à chaque étape du filtrage. Attention ! ces informations ne se trouvent pas dans l'histoire. Pour les obtenir il faut cliquer sur l'icône "Workflow invocations" dans la barre de gauche.
 
