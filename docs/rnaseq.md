@@ -2,7 +2,7 @@
 
 !!! danger "Compte rendu des résultats"
 
-	Je vous demande de m'envoyer en message direct dans Slack à la fin de la scéance le cahier de manipulation électronique (fichier texte) dans lequel sont décrites les étapes que vous avez effectuées pendant ce TP. L’objectif est que la personne qui va relire ce document soit capable de reproduire ce que vous avez fait et obtenir les mêmes résultats que vous.
+	Je vous demande de m'envoyer en message direct dans Slack à la fin de la scéance le cahier de manipulation électronique (fichier texte anonymisé) dans lequel sont décrites les étapes que vous avez effectuées pendant ce TP. L’objectif est que la personne qui va relire ce document soit capable de reproduire ce que vous avez fait et obtenir les mêmes résultats que vous.
 
 !!! attention "Objectif"
 
@@ -13,23 +13,23 @@
 	Les questions posées tout au long de cette page sont là pour vous guider dans votre analyse, pour vous aider à comprendre ce que vous faites et ainsi mieux appréhender vos résultats.
 	**Les réponses que vous donnerez dans votre cahier seront aussi utilisées pour l’évaluation de votre travail. Pensez également à bien jusitifier les choix que vous faites.**
 
-Vous allez partir de l'historique que vous avez créé où se trouve les données de séquençage des ARN WT et GLKD ([voir le tutoriel](https://artbio.github.io/startbio/AnalyseGenomes_2024/Loading_data_in_galaxy/#5-dataset-collections)).
+Vous allez partir de l'historique que vous avez créé où se trouve les données de séquençage des ARN WT et GLKD.
 
-Vous pouvez retrouver les noms des deux échantillons sur lesquels vous aller travailler dans le [tableau partagé accessible en ligne](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=418538100).
+Vous pouvez retrouver les noms des deux échantillons sur lesquels vous aller travailler dans le [tableau partagé accessible en ligne](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=418538100).
 
-Les librairies ont été préparées à l'aide du protocole [RNA RiboZero Stranded d'Illumina](https://support.illumina.com/sequencing/sequencing_kits/illumina-stranded-total-rna-ligation-ribo-zero-plus.html).
+Les librairies ont été préparées à l'aide du protocole [RNA RiboZero Stranded d'Illumina](https://support.illumina.com/sequencing/sequencing_kits/illumina-stranded-total-rna-ligation-ribo-zero-plus.html). Ce protocole utiliser une méthode de déplétion ribosomique et pas de purification polyA.
 
 --------------------------------------------------------------------------------
 ## Contrôle qualité des lectures
 
 Comme dans la partie sur les [petits ARN](./srna.md#controle-qualite-des-lectures), regardez les résultats du contrôle de qualité effectué par FastQC sur les fichiers fastq pour les 2 échantillons.
 
-Reportez le "nombre lectures totales" et le "%GC" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=418538100).
+Reportez le "nombre lectures totales" et le "%GC" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=418538100).
 
 
 !!! hint "Questions"
 
-	- Les lectures sont-elles de bonne qualité pour poursuivre vos analyses ?
+	- La qualité des lectures permet-elle de poursuivre vos analyses ?
 	- Pouvez-vous observer des biais particuliers à prendre en compte pour la suite ?
 
 
@@ -47,9 +47,9 @@ Vous allez utiliser bowtie pour réaliser l’alignement des lectures obtenues s
 
 ### Test des paramètres d'alignement
 
-Ouvrez le [tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=871313255) dans une nouvelle fenêtre de votre navigateur. Rendez-vous dans l'onglet "Test alignement RNAseq".
+Ouvrez le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=871313255) dans une nouvelle fenêtre de votre navigateur. Rendez-vous dans l'onglet "Test alignement RNAseq".
 
-Vous allez lancer deux alignements sur les jeux de paramètres indiquez dans le tableau. Le premier en tant que testeur, le second en tant que relecteur.
+Vous allez lancer deux alignements sur les jeux de paramètres indiqués dans le tableau. Le premier en tant que testeur, le second en tant que relecteur.
 
 Vous allez travailler sur l'échantillon *Test Mapping* présent dans votre histoire.
 

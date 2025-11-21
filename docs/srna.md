@@ -197,11 +197,15 @@ Vous allez réaliser des graphiques et quantifier la répartition des 2 types de
 
 La première étape consiste à extraire les deux alignements que vous avez obtenus à l'étape précédente de la collection où ils se trouvent. Reportez vous aux [annexes](./annexes.md#extraire-des-elements-dune-collection) pour savoir comment procéder.
 
-Puis vous utiliserez l’outil ***small_rna_maps*** sur chacun de vos fichiers d’alignement extrait en prenant soin d’indiquer pour chacun le facteur de normalisation permettant de corriger les lectures calculés dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=243437883). 
+Puis vous utiliserez l’outil ***small_rna_maps*** sur chacun de vos fichiers d’alignement extrait en prenant soin d’indiquer pour chacun le facteur de normalisation permettant de corriger les lectures calculés dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=243437883). 
 
 Les facteurs de normalisation sont entrés dans l'ordre des fichiers sélectionnés.
 
 ![Distribution des lectures par taille](img/srna/small_rna_maps.png "Distribution des lectures par taille")
+
+Relancez l’outil ***small_rna_maps*** en modifiant les options du graphique avec les paramètres ci-dessous.
+
+![Distribution des lectures par chromosome](img/srna/small_rna_maps2.png "Distribution des lectures par taille")
 
 !!! hint "Question"
 
@@ -219,7 +223,7 @@ Les séquences de piRNA sont comprises entre 23 et 29 nucéotides. Vous allez r�
 
 Sur les fichiers fastq obtenus en sortie de cette étape, relancez une analyse de la qualité des séquences avec l’outil ***FastQC*** afin de vous assurer que tout c'est passé comme vous l'attendiez.
 
-Reportez le "nombre de lectures 23-29nt" et le "%GC" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=243437883).
+Reportez le "nombre de lectures 23-29nt" et le "%GC" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=243437883).
 
 ### Conserver les piRNA "uniques"
 
@@ -242,7 +246,7 @@ Lancez l’alignement une fois que vous avez déterminé les paramètres optimau
 
 Sur les fichiers fastq des piRNA uniques relancez une analyse de la qualité des séquences avec l’outil ***FastQC***.
 
-Reportez le "nombre de lectures piRNA uniques" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=243437883).
+Reportez le "nombre de lectures piRNA uniques" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=243437883).
 
 
 --------------------------------------------------------------------------------
@@ -282,7 +286,7 @@ Pour finir vous allez compter le nombre de séquences commençant par U. Pour ce
 
 ![Compter les U](img/srna/comptage_u.png "Compter les U")
 
-Reportez le "nombre séquences commençant par un U" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=243437883).
+Reportez le "nombre séquences commençant par un U" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=243437883).
 
 !!! hint "Question"
 
