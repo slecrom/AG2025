@@ -6,15 +6,10 @@
 	
 La documentation d'Integrative Genomics Viewer (IGV) est [accessible en ligne](https://software.broadinstitute.org/software/igv/).
 
-Vous allez utiliser la version 2.16.2 d'IGV que vous allez télécharger dans le [répertoire des archives](https://data.broadinstitute.org/igv/projects/downloads/2.16/).
+Vous allez utiliser la version 2.19.6 d'IGV. IGV se lance en ouvrant un terminal et en indiquant le chemin vers le logiciel :
 
-Décompressez l'archive `unzip IGV_2.16.2.zip`, déplacez vous dans le répertoire que vous venez de créer et lancer IGV à l'aide de la commande `./igv.sh`.
+`/bin_AdG/IGV_Linux_2.19.6/igv.sh`
 
-<!--
-IGV se lance en ouvrant un terminal et en indiquant le chemin vers le logiciel :
-
-`/Formation_AdG/IGV_2.18.4/igv.sh`
--->
 
 --------------------------------------------------------------------------------
 ## Récupérez vos données depuis le serveur Galaxy
@@ -28,7 +23,7 @@ Vous allez utiliser IGV en local dans votre VM sur les machines de la salle du c
 
 Les fichiers à télécharger sont les suivants :
 
-- Le génome de la *drosophile* au format fasta : dmel-MAIN-chromosome-r6.59.fasta
+- Le génome de la *drosophile* au format fasta : dmel-r6.59-clean.fasta
 - Le fichier d'annotation au format gtf : dmel-r6.59-gtf
 - Les fichiers bam filtrés, triés et leurs index des fichiers GLKD et WT que vous avez analysés, exemple : ALBA4.bam, ALBA4.bai, ALBA1.bam, ALBA1.bai
 
@@ -80,7 +75,7 @@ En effectuant un clic-droit sur une des pistes (track) vous avez accès à un gr
 
 Il est aussi possible de configurer la plage de données de chacune des pistes ou de toutes les pistes. Par défaut, les pistes sont en mode Autoscale, leur minimum et maximum est adapté aux données d'une seule piste pour favoriser la visualisation des données de chaque piste individuellement.
 
-Quand il s'agit de comparer plusieurs pistes, il peut être plus intéressant de fixer le minimum et maximum du groupe de pistes de façon à rendre la visualisation facilement comparable. Il faut pour cela sélectionner les pistes puis effectuer un clic droit sur cette sélection et choisir "Set Data Range". La boite de dialogue indique par défaut la valeur minimum de ratio pour les pistes ainsi que la valeur maximale globale et la valeur médiane. Il suffit donc de valider cette plage de données pour appliquer la même échelle à votre groupe de pistes.
+Quand il s'agit de comparer plusieurs pistes, il est plus intéressant qu'elles aient toutes la même échelle. Pour cela il faut fair un clic droit sur les pistes que vous voulez sélectionner. Puis choisir "Group Autoscale" pour avoir la même échelle dynamique pour les deux. Vous pouvez aussi choisir "Set Data Range" pour fixer les bornes vous même. La boite de dialogue indique par défaut la valeur minimum de ratio pour les pistes ainsi que la valeur maximale globale et la valeur médiane. Il suffit donc de valider cette plage de données pour appliquer la même échelle à votre groupe de pistes.
 
 ![Fixed scale](img/igv/igv_fixedscale.png "Fixed scale")
 
