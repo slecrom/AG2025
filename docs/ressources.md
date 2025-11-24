@@ -7,15 +7,15 @@ Cette section regroupe un ensemble de fichier ressources utiles pour le TP
 
 ### Genomic features
 
-Pour ce TP nous utiliserons la version 6.59 du génome de *Drosophila melanogaster* dont les fichiers de séquence au format fasta sont accessibles sur le [site FTP de Flybase](https://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/).
+Pour ce TP nous utiliserons la version 6.59 du génome de *Drosophila melanogaster* dont les fichiers de séquence au format fasta sont accessibles sur le [site FTP de Flybase](https://s3ftp.flybase.org/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/index.html).
 La liste ci-dessous peut-être importée dans votre serveur Galaxy. 
 
 ```
-https://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/dmel-all-chromosome-r6.59.fasta.gz	dmel-r6.59-fasta
-https://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/dmel-all-miRNA-r6.59.fasta.gz	dmel-r6.59-miRNA
-https://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/dmel-all-miscRNA-r6.59.fasta.gz	dmel-r6.59-miscRNA
-https://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/dmel-all-tRNA-r6.59.fasta.gz	dmel-r6.59-tRNA
-https://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/gtf/dmel-all-r6.59.gtf.gz	dmel-r6.59-gtf
+https://s3ftp.flybase.org/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/dmel-all-chromosome-r6.59.fasta.gz	dmel-r6.59-fasta
+https://s3ftp.flybase.org/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/dmel-all-miRNA-r6.59.fasta.gz	dmel-r6.59-miRNA
+https://s3ftp.flybase.org/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/dmel-all-miscRNA-r6.59.fasta.gz	dmel-r6.59-miscRNA
+https://s3ftp.flybase.org/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/fasta/dmel-all-tRNA-r6.59.fasta.gz	dmel-r6.59-tRNA
+https://s3ftp.flybase.org/genomes/Drosophila_melanogaster/dmel_r6.59_FB2024_04/gtf/dmel-all-r6.59.gtf.gz	dmel-r6.59-gtf
 ```
 
 Séquence du transgène PLacZ
@@ -25,7 +25,7 @@ https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_GenomicFeatures/download?p
 
 ### Petits ARN
 
-La liste ci-dessous peut-être importée dans votre serveur Galaxy. Attention à ne sélectionner que les lignes correspondant aux deux échantillons sur lesquels vous allez travailler et qui sont indiqués dans le [tableau partagé dans l'onglet "petits ARN"](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=243437883).
+La liste ci-dessous peut-être importée dans votre serveur Galaxy. Attention à ne sélectionner que les lignes correspondant aux deux échantillons sur lesquels vous allez travailler et qui sont indiqués dans le [tableau partagé dans l'onglet "petits ARN"](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=243437883).
 
 ```
 GLKD
@@ -41,7 +41,7 @@ https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_smallRNAseqData/download?p
 
 ### ARN
 
-La liste ci-dessous peut-être importée dans votre serveur Galaxy. Attention à ne sélectionner que les lignes correspondant aux deux échantillons sur lesquels vous allez travailler et qui sont indiqués dans le [tableau partagé dans l'onglet "ARN"](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=418538100).
+La liste ci-dessous peut-être importée dans votre serveur Galaxy. Attention à ne sélectionner que les lignes correspondant aux deux échantillons sur lesquels vous allez travailler et qui sont indiqués dans le [tableau partagé dans l'onglet "ARN"](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=418538100).
 
 ```
 GLKD
@@ -54,6 +54,23 @@ https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%
 https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=ALBA5.fastqsanger.gz	WT-ALBA5
 https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=ALBA6.fastqsanger.gz	WT-ALBA6
 ```
+
+### Mesure des niveaux d'expression
+
+La liste ci-dessous peut-être importée dans votre serveur Galaxy. Ces fichiers de comptage ont été obtenus après un alignement des données de RNA-seq sur le génome de la drosophile version r6.59 avec les paramètres de Bowtie -n 1 -m 1 -l 32.
+
+```
+GLKD
+https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_GLKD_ALBA1.txt	GLKD-ALBA1-Counts
+https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_GLKD_ALBA2.txt	GLKD-ALBA2-Counts
+https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_GLKD_ALBA3.txt	GLKD-ALBA3-Counts
+
+WT
+https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_WT_ALBA4.txt	WT-ALBA4-Counts
+https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_WT_ALBA5.txt	WT-ALBA5-Counts
+https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_WT_ALBA6.txt	WT-ALBA6-Counts
+```
+
 
 --------------------------------------------------------------------------------
 ## Amorces de qPCR

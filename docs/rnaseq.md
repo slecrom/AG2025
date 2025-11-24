@@ -60,7 +60,7 @@ Vous allez utiliser l’outil ***Map with Bowtie for Illumina*** sur les donnée
 ![Alignement avec Bowtie](img/rna/bowtie3.png "Alignement avec Bowtie")
 ![Alignement avec Bowtie](img/rna/bowtie4.png "Alignement avec Bowtie")
 
-Une fois l'alignement effectué, indiquez le nombre, le pourcentage de lectures alignées et le temps mis par le programme à s'exécuter dans l'[onglet "Test alignement RNAseq" du tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=871313255) sur la ligne des paramètres dont vous avez la charge en tant que testeur. Vérifiez que vous obtenez les mêmes résultats que ceux indiqués par le testeur dans la ligne où vous êtes le relecteur.
+Une fois l'alignement effectué, indiquez le nombre, le pourcentage de lectures alignées et le temps mis par le programme à s'exécuter dans l'[onglet "Test alignement RNAseq" du tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=871313255) sur la ligne des paramètres dont vous avez la charge en tant que testeur. Vérifiez que vous obtenez les mêmes résultats que ceux indiqués par le testeur dans la ligne où vous êtes le relecteur.
 
 !!! note ""
 
@@ -70,7 +70,7 @@ Une fois l'alignement effectué, indiquez le nombre, le pourcentage de lectures 
 
 	- Suite à ces tests quels sont les paramètres que vous allez choisir pour aligner vos échantillons ?
 
-Reporter ces paramètres dans l'[onglet "ARN" du tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=418538100).
+Reporter ces paramètres dans l'[onglet "ARN" du tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=418538100).
 
 !!! danger "Attention"
 
@@ -83,7 +83,7 @@ Maintenant que vous avez déterminé les options qui vous paraissent les plus pe
 
 ![Alignement avec Bowtie](img/rna/bowtie_rna.png "Alignement avec Bowtie")
 
-Reportez le "nombre d'alignements" et vos paramètres dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=418538100).
+Reportez le "nombre d'alignements" et vos paramètres dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=418538100).
 
 !!! danger "Attention"
 
@@ -116,27 +116,13 @@ Le décompte des alignements va se faire sur le fichier BAM filtré et trié que
 
 ![featureCounts](img/rna/featurecounts.png "featureCounts")
 
-Reportez le "nombre de lectures comptées" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1aOcIwFhsY8qtf-cb1hz1NWUmFlfvU1sVO73e-tBzybs/edit?gid=418538100).
+Reportez le "nombre de lectures comptées" dans le [tableau partagé](https://docs.google.com/spreadsheets/d/1ZGyRM1YU9N70Mh-RY5eBubg1dgWqcuvPiPh3lcr1ZeE/edit?gid=418538100).
 
 
 --------------------------------------------------------------------------------
 ## Analyse différentielle
 
 Vous allez maintenant comparer les niveaux d’expression des gènes entre vos 2 conditions à l’aide des 3 réplicats de chaque condition. Pour cela vous devez d’abord récupérer les fichiers de comptage des autres échantillons qu’il vous manque.
-
-La liste ci-dessous peut-être importée dans votre serveur Galaxy. Attention à ne sélectionner que les lignes correspondant aux échantillons dont vous avez besoin.
-
-```
-GLKD
-https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_GLKD_ALBA1.txt	GLKD-ALBA1-Counts
-https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_GLKD_ALBA2.txt	GLKD-ALBA2-Counts
-https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_GLKD_ALBA3.txt	GLKD-ALBA3-Counts
-
-WT
-https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_WT_ALBA4.txt	WT-ALBA4-Counts
-https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_WT_ALBA5.txt	WT-ALBA5-Counts
-https://psilo.sorbonne-universite.fr/index.php/s/Kdm3_RNAseqData/download?path=%2F&files=featureCounts_WT_ALBA6.txt	WT-ALBA6-Counts
-```
 
 !!! danger "Attention"
 
@@ -159,7 +145,7 @@ Vous devez indiquer à l’outil quels sont les échantillons à rattacher à ch
 
 !!! hint "Questions"
 
-	- L’étape d’analyse différentielle s’est elle bien déroulée ?
+	- En regardant les graphiques de diagnostique, détectez-vous un problème lors de l’étape d’analyse différentielle ?
 
 !!! hint ""
 
@@ -183,9 +169,9 @@ Un [tutoriel](https://training.galaxyproject.org/training-material/topics/transc
 
 Par exemple voici comment visualiser sur le volcano plot la liste des gènes cibles des amorces que vous avez utilisés en qPCR.
 
-Comme vous l'avez fait pour [la liste des chromosomes de la drosophile](https://artbio.github.io/startbio/AnalyseGenomes_2024/Preparing_reference/#a-simplify-fasta-headers), créez la liste des noms de gènes cibles de vos amorces de qPRC dans votre historique Galaxy. Appelez la "Cibles PCR". **Indiquez "tabular" pour type de données.**
+Pour récupérer cette liste, cliquez sur le menu "Upload Data", puis sur le bouton  "Paste/Fetch Data" donnez le nom "Cibles PCR" à la place de "New File". **Indiquez "tabular" pour type de données.** Pour finir cliquez sur le bouton "Start".
 
-Voici la liste des gènes à importer :
+Voici la liste des gènes à copier :
 ```
 FlyBase ID
 FBgn0000179

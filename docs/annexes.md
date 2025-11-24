@@ -30,6 +30,15 @@ Au redémarrage d'une machine virtuelle (VM) suspendue, on retrouve Galaxy dans 
 
 -->
 
+
+--------------------------------------------------------------------------------
+## Résoudre les jobs bloqués dans Galaxy
+
+Si après une réactivation de votre VM dans Galaxy vos jobs sont grisés, le gestionnaire slurm installé sur votre serveur est bloqué.
+
+Pour le relancer, [suivez les indications du tutoriel STARTbio](https://artbio.github.io/startbio/AnalyseGenomes_2025/manage_VM/#3-stalled-jobs-in-your-galaxy-histories).
+
+
 --------------------------------------------------------------------------------
 ## Modifier le type des données
 
@@ -131,18 +140,23 @@ Une fois importé, pensez à le renommer pour lui donner un nom plus explicite.
 
 ### Création d'un instantané
 
-Vous pouvez créer un instantané pour sauvegarder votre disque à des étapes importantes en cas de problème. Par exemple une fois toutes les données chargées et préparées avant de démarrer la semaine de TP.
+Vous pouvez créer un instantané pour sauvegarder votre disque à des étapes importantes en cas de problème. Par exemple une fois toutes les tutoriels terminés avant de démarrer votre analyse personnelle ou pour augmenter l'espace disponible.
 
 - Allez dans l'application "Instances de VM", cliquer sur le nom de la VM
 - Dans la section "Stockage" cliquez sur le nom du disque de démarrage
 - Puis cliquez sur "Créer un instantané" dans la barre de menu du haut
 - Pramètres
-	- Nom : ansible-galaxy-4-startup2
-	- Description : Sauvegarde de la VM de démarrage du TP AG2024 avec toutes les données chargées et le génome de référence préparé
+	- Nom : tp-galaxy-ag2025
+	- Description : Sauvegarde de la VM du TP AG2025 après les 2 jours de tutoriels
 	- Type de source de l'instantané : Disque
-	- Disque source : ansible-galaxy-4
+	- Disque source : test-galaxy-4
 	- Type : instantané
 	- Emplacement : Régional - europe-north1
+
+!!! danger "Attention"
+
+	Choisissez l'emplacement là où vous avez créé votre VM.
+
 
 ![Création d'un instantané](img/annexes/snapshot_creation.png "Création d'un instantané")
 
@@ -152,7 +166,7 @@ Vous pouvez obtenir plus d'information en consultant la documentation [Créer de
 
 En cas de problème avec votre VM vous pouvez repartir d'une sauvegarde sans être obligé de tout réinstaller.
 
-- La première étape consiste à créer une VM comme vous l'avez déjà fait en suivant [le tutoriel StartBio](https://artbio.github.io/startbio/AnalyseGenomes_2024/bare-galaxy-google/).
+- La première étape consiste à créer une VM comme vous l'avez déjà fait en suivant [le tutoriel StartBio](https://artbio.github.io/startbio/AnalyseGenomes_2025/Deploy_server_from_VMI/#2-spin-off-your-galaxy-server-from-a-virtual-machine-image).
 - Puis dans disque de démarrage cliquer sur "Modifier" et dans l'onglet "Instantanés" choisir celui que vous avez créé.
 - Vous avez la possibilité d'augmenter la taille du disque si vous souhaitez obtenir plus d'espace sur votre VM.
 
