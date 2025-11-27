@@ -104,3 +104,6 @@ Tous vos paramètres d'échelle, de couleurs, les chemins vers les données que 
 
 	Ne mettez pas d'accents ou de caractères spéciaux dans les annotations que vous utiliserez, ainsi que dans votre arborescence de fichiers. IGV va enregistrer votre session en encodant vos caractères spéciaux mais ne sera plus capable de s'y retrouver quand vous souhaiterez rouvrir une session ainsi sauvegardée. 
 
+!!! note "Pour aller plus loin"
+
+	Si vous voulez approfondir l'utilisation d'IGV, vous pouvez consulter ce [tutoriel vidéo](https://www.canceropole-idf.fr/nos-actions/accompagnement-des-chercheurs/formation-ngs/visualisation-de-donnees-genomiques-avec-igv/) développé par la Cancéropôle d'ïle-de-France. Il dure 26'.
