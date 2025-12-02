@@ -227,7 +227,7 @@ Reportez le "nombre de lectures 23-29nt" et le "%GC" dans le [tableau partagé](
 
 ### Conserver les piRNA "uniques"
 
-Le but est maintenant de conserver les piRNA les plus "récents". Pour cela on va sélectionner les piRNA qui s'alignent de façon unique sur le génome sans aucun mismatch.
+Le but est maintenant de conserver les piRNA qui s'alignent uniquement à un seul endroit. Pour cela on va sélectionner les piRNA qui s'alignent de façon unique sur le génome sans aucun mismatch.
 
 On utilise l’outil ***sR_bowtie*** sur les piRNA de 23-29 nt. On cherche à obtenir des alignements uniques sans ambiguïtés et sans mismatch.
 
